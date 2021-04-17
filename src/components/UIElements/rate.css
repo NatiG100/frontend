@@ -1,0 +1,16 @@
+.rate {
+  float:left;
+  display: inline;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(45,45,45,10%);
+  margin: 15px;
+  border-radius: 0px;
+  
+}
+.rate .imoji{
+  display: block;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
