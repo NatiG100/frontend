@@ -21,6 +21,7 @@ const AuthPage = () => {
                         <Button variant="success" type="submit">
                             Login
                         </Button>
+                        <Button variant="link" className="center">Already have an account</Button>
                     </Form>
                 </Card.Body>
             </Card>
