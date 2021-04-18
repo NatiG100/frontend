@@ -36,6 +36,18 @@ const Book = props => {
                     {props.title}
                 </Card.Title>
                 <Row>
+                    <Col>
+                        <Card.Img className="center"
+                            style={{
+                                display:'inline',
+                                maxWidth: '140px',
+                                maxHeight: '204px',
+                                width: 'auto',
+                                height: 'auto'
+                            }}  
+                            src="https://codex.cs.yale.edu/avi/os-book/images/os9c-cover.jpg" 
+                        />
+                    </Col>
                     <Col xs={8}>
                         <ListGroup variant="flush">
                             <ListGroup.Item><b>Author(s):</b> Dummy Author</ListGroup.Item>
@@ -43,19 +55,6 @@ const Book = props => {
                             <ListGroup.Item><b>Size(MB):</b> 12</ListGroup.Item>
                             <ListGroup.Item><b>File Type:</b> PDF</ListGroup.Item>
                         </ListGroup>
-                    </Col>
-                    <Col>
-                        <Card.Img 
-                            style={{
-                                display: 'block',
-                                maxWidth: '140px',
-                                maxHeight: '204px',
-                                width: 'auto',
-                                height: 'auto'
-                            }}
-                            variant="center" 
-                            src="https://codex.cs.yale.edu/avi/os-book/images/os9c-cover.jpg" 
-                        />
                     </Col>
                 </Row>
                 
