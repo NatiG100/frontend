@@ -8,6 +8,7 @@ const BookList = props =>{
             {
             props.books.map(book=>(
                 <Book 
+                    key={book.id}
                     title={book.title} 
                     description={book.description} 
                     linkTxt={book.linkTxt}

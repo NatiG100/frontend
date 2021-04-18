@@ -32,34 +32,34 @@ const NavBar = () => {
                 <Nav className="mr-auto">
                     <LinkContainer to="/">
                         <Nav.Link >
-                            <i class="bi bi-person"></i> Users
+                            <i className="bi bi-person"></i> Users
                         </Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/books/dynamicUID">
                         <Nav.Link>
-                            <i class="bi bi-cloud-arrow-up"></i> My Uploads
+                            <i className="bi bi-cloud-arrow-up"></i> My Uploads
                         </Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/books/upload">
                         <Nav.Link>
-                            <i class="bi bi-upload"></i> Upload
+                            <i className="bi bi-upload"></i> Upload
                         </Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/books/popular">
                         <Nav.Link>
-                            <i class="bi bi-star"></i> Popular
+                            <i className="bi bi-star"></i> Popular
                         </Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/books/filter">
                         <Nav.Link>
-                            <i class="bi bi-funnel"></i> Filter
+                            <i className="bi bi-funnel"></i> Filter
                         </Nav.Link>
                     </LinkContainer>
                 </Nav>
             
                 <Form inline>
                 <FormControl type="text" placeholder="Search Books" className="mr-sm-2" />
-                <Button variant="outline-success"><i class="bi bi-search"></i> Search</Button>
+                <Button variant="outline-success"><i className="bi bi-search"></i> Search</Button>
                 </Form>
                 <LinkContainer to="/auth"><Button className="mx-sm" variant="info">Sign In</Button></LinkContainer>
             </Navbar.Collapse>

@@ -3,6 +3,7 @@ import BookList from '../Book/components/BookList';
 
 const books = [
     {
+        id: 1,
         title: "Popular Windows OS training" ,
         description: "Get in-depth exam prep for Exam 70-271, a core "+
                     "requirement for MCDST certification on Microsoft"+
@@ -18,6 +19,7 @@ const books = [
         linkTxt: "Popular Library Genesis"
     },
     {
+        id: 2,
         title: "Popular Programming" ,
         description: "Get in-depth exam prep for Exam 70-271, a core "+
                     "requirement for MCDST certification on Microsoft"+
@@ -33,6 +35,7 @@ const books = [
         linkTxt: "Popular Amazon"
     },
     {
+        id: 3,
         title: "Popular Windows OS training" ,
         description: "Get in-depth exam prep for Exam 70-271, a core "+
                     "requirement for MCDST certification on Microsoft"+
@@ -48,6 +51,7 @@ const books = [
         linkTxt: "Popular Library Genesis"
     },
     {
+        id: 4,
         title: "Popular Programming" ,
         description: "Get in-depth exam prep for Exam 70-271, a core "+
                     "requirement for MCDST certification on Microsoft"+
