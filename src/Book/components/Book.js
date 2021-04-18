@@ -132,7 +132,7 @@ const Book = props => {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" type="submit">Save Changes</Button>
+                    <Button variant="primary" disabled={!(title.isValid&&description.isValid)}type="submit">Save Changes</Button>
                     <Button variant="success" onClick={hideEdit}>Cancel</Button>
                 </Modal.Footer>
             </Modal>
