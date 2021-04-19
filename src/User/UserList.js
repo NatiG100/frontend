@@ -8,6 +8,7 @@ const UserList = props => {
             {
                 props.users.map(user=>(
                     <User 
+                        key = {user.id}
                         uploads={user.uploads}
                         userName={user.userName}
                         userImg={user.userImg}

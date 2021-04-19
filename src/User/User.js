@@ -3,7 +3,7 @@ import {Card, ListGroup, ListGroupItem, Button} from 'react-bootstrap';
 import getStyle from '../components/utils/bootstrapStyle';
 const User = props => {
     return (
-        <Card style={{... getStyle("card") , display:'inline', margin: '15px', float:'left', textAlign:'center'}}>
+        <Card style={{... getStyle("card") , display:'inline', margin: '15px', float:'left'}}>
             <Card.Img variant="top" style={{width: '300px'}}src={props.userImg} />
             <Card.Body>
                 <Card.Title><Card.Link href="#">{props.userName}</Card.Link></Card.Title>
@@ -14,17 +14,17 @@ const User = props => {
             <Card.Body>
                 <Button 
                     style={{borderRadius: '35px', margin: '4px'}}>
-                        <i class="bi bi-facebook"></i>
+                        <i className="bi bi-facebook"></i>
                 </Button>
                 <Button
                     variant="dark" 
                     style={{borderRadius: '35px',margin: '4px'}}>
-                        <i class="bi bi-twitter"></i>
+                        <i className="bi bi-twitter"></i>
                 </Button>
                 <Button 
                     variant="success"
                     style={{borderRadius: '35px', margin: '4px'}}>
-                        <i class="bi bi-telegram"></i>
+                        <i className="bi bi-telegram"></i>
                 </Button>
             </Card.Body>
         </Card>

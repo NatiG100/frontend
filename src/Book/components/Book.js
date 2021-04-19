@@ -93,7 +93,7 @@ const Book = props => {
     return ( 
         <React.Fragment>
 
-            //edit modal begins
+            {/* edit modal begins */}
             <Modal 
                 show={showEdit} 
                 onHide={hideEdit} 
@@ -136,10 +136,10 @@ const Book = props => {
                     <Button variant="success" onClick={hideEdit}>Cancel</Button>
                 </Modal.Footer>
             </Modal>
-            //edit modal ends
+            {/* edit modal ends */}
 
 
-            //Delete modal begins
+            {/* Delete modal begins */}
             <Modal 
                 show={showDelete} 
                 onHide={hideDelete} 
@@ -155,10 +155,10 @@ const Book = props => {
                     <Button variant="success" onClick={hideDelete}>NO</Button>
                 </Modal.Footer>
             </Modal>
-            //delete modal ends
+            {/* delete modal ends */}
 
 
-            //book ui begins
+            {/* book ui begins */}
             <Card  style={getStyle("card")}>
                 <Card.Img variant="top" src="" />
                 <Card.Body>
@@ -235,7 +235,7 @@ const Book = props => {
                     </Card.Body>
                 </Card.Body>
             </Card>
-            //book ui ends
+            {/* book ui ends */}
         </React.Fragment>
     );
 };
