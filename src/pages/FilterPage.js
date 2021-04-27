@@ -4,8 +4,37 @@ import '../components/utils/bootstrapStyle'
 import getStyle from '../components/utils/bootstrapStyle';
 
 const FilterPage = () => {
+    // states for form validation
+    const [size, setSize] = useState({value:1, isValid:false});
+    const [title, setTitle] = useState({value:"", isValid:false});
+    const [type, setType]= useState("PDF");
+
+    const [titleIsBlur, setTitleIsBlur] = useState(false);
+    const [sizeIsBlur, setSizeIsBlur] = useState(false);
+
+    //states for filter checkbox
     const [isTypeClicked, setIsTypeClicked] = useState(false);
     const [isSizeClicked, setIsSizeClicked] = useState(false);
+    
+    //functions for validation
+    const handleTitleCange = (event) =>{
+        if(event.target.value.size >= 1){
+            setTitle({value: event.target.value, isValid:true});
+            return;
+        }
+        setTitle({value: event.target.value, isValid:false});
+    };
+    const handleSizeCange = (event) =>{
+        if(typeof event.target.value !== "number"){
+            setSize({value: event.target.value, isValid:true});
+            return;
+        }
+        setSize({value: event.target.value, isValid:false});
+    };
+    const handleTypeCange = (event) =>{
+        setType(event.target.value);
+    };
+    
     const typeClickHandler = (event) =>{
         setIsTypeClicked(!isTypeClicked);
     };

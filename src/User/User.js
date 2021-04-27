@@ -3,8 +3,14 @@ import {Card, ListGroup, ListGroupItem, Button} from 'react-bootstrap';
 import getStyle from '../components/utils/bootstrapStyle';
 const User = props => {
     return (
-        <Card style={{... getStyle("card") , display:'inline', margin: '15px', float:'left'}}>
-            <Card.Img variant="top" style={{width: '300px'}}src={props.userImg} />
+        <Card style={{...getStyle("card") , 
+            minWidth: '150px', 
+            display:'flex',
+            textAlign:'center',
+            textJustify:'inter-character',
+            margin:'15px'
+            }}>
+            <Card.Img variant="top" style={{width:'200px'}}src={props.userImg} />
             <Card.Body>
                 <Card.Title><Card.Link href="#">{props.userName}</Card.Link></Card.Title>
             </Card.Body>

@@ -3,8 +3,8 @@ import {Form, Col, Button, Card} from 'react-bootstrap';
 import getStyle from '../components/utils/bootstrapStyle';
 const UploadPage = () => {
     return (
-        <div className="container ">
-        <Card style={{... getStyle("card"), maxWidth: '600px'}}>
+        <div className="container">
+        <Card style={{...getStyle("card"), maxWidth: '600px'}}>
             <Card.Body>
                 <Form>
                     <Form.Row>
