@@ -4,9 +4,7 @@ import User from './User';
 
 const UserList = props => {
     return (
-        <div style={{display:'flex', justifyContent:'center'}}>
-            <div style={{ backgroundColor:'blue', padding:'10px', maxWidth:"80vw", display:'flex', justifyContent:'space-between' }}> 
-            <div className="" >
+            <div className="container" >
             {
                 props.users.map(user=>(
                     <User 
@@ -17,11 +15,7 @@ const UserList = props => {
                     />
                 ))
             } 
-        </div>
-            </div>
-        </div>
-        
-       
+        </div>        
     );
 };
 
